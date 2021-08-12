@@ -1,0 +1,289 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 52%; } }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 100%; } }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6d5d4b;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 90vh repeat(5, min-content);
+  grid-template-columns: [side-start] 6rem [side-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(12rem, min-content) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media only screen and (max-width: 62.5em) {
+    .container {
+      grid-template-rows: 5rem 90vh repeat(5, min-content);
+      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(12rem, min-content) [col-end]); } }
+
+.heading-primary {
+  color: #fff;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center; }
+  .heading-primary__p {
+    color: #fff;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center; }
+
+.heading-secondary {
+  margin-top: 6rem;
+  color: #101d2c;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center; }
+
+.heading__3 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center; }
+  .heading__3-1 {
+    color: #fff;
+    margin-top: 6rem; }
+  .heading__3-2 {
+    margin-top: 6rem;
+    color: #101d2c; }
+    @media only screen and (max-width: 50em) {
+      .heading__3-2 {
+        margin-top: 2rem; } }
+  .heading__3-3 {
+    color: #54483a;
+    grid-column: 1/-1; }
+
+.sidebar {
+  grid-row: 1/-1;
+  background-color: #c69963; }
+  @media only screen and (max-width: 62.5em) {
+    .sidebar {
+      grid-column: 1/-1;
+      grid-row: 1/2; } }
+
+.header {
+  position: relative;
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.83), rgba(16, 29, 44, 0.83)), url(../img/karate-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 3rem 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-row-gap: 1.5rem;
+  justify-items: center; }
+  @media only screen and (max-width: 50em) {
+    .header {
+      background-position: right; } }
+
+.header-logo {
+  justify-self: center; }
+
+.header-logo__img {
+  width: 5.5rem;
+  height: auto; }
+
+.header-logo__text {
+  float: right;
+  margin: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  font-weight: 500; }
+
+.founders {
+  grid-column: col-start 6 / center-end;
+  background-color: #c69963; }
+  @media only screen and (max-width: 50em) {
+    .founders {
+      grid-column: 1/-1; } }
+
+.founder-box {
+  padding: 3rem 6rem;
+  display: grid;
+  grid-template-columns: min-content max-content;
+  gap: 1.5rem; }
+  @media only screen and (max-width: 50em) {
+    .founder-box {
+      grid-template-columns: repeat(3, min-content max-content);
+      gap: 5rem; } }
+  .founder-box__img {
+    width: 6.5rem;
+    height: auto;
+    border-radius: 50%;
+    place-self: center; }
+  .founder-box__text {
+    color: #fff;
+    place-self: center; }
+    .founder-box__text-1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      display: block; }
+    .founder-box__text-2 {
+      font-size: 1.4rem; }
+
+.aboutus {
+  grid-column: center-start/col-end 5;
+  background-color: #fff;
+  margin: 4rem 0; }
+  @media only screen and (max-width: 50em) {
+    .aboutus {
+      grid-column: 1/-1;
+      margin: 2rem 0; } }
+
+.about-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem; }
+  @media only screen and (max-width: 50em) {
+    .about-box {
+      padding: 6rem;
+      gap: 6rem; } }
+  .about-box__text {
+    padding: 2rem;
+    text-align: left;
+    font-size: 1.4rem; }
+  @media only screen and (max-width: 50em) {
+    .about-box__img {
+      width: 100%; } }
+
+.stay {
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.73), rgba(16, 29, 44, 0.73)), url(./../img/karate-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 8rem; }
+  @media only screen and (max-width: 50em) {
+    .stay {
+      background-position: right; } }
+
+.stay-box {
+  position: relative;
+  padding: 3rem;
+  margin: 3rem 20rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(250, 240, 240, 0.459);
+  transition: all 0.2s;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 1rem; }
+
+.form {
+  border: none;
+  padding: 1rem 8rem;
+  place-self: center; }
+
+.form-label {
+  position: absolute;
+  left: -50%;
+  visibility: hidden;
+  opacity: 0; }
+
+.button {
+  border: none;
+  border-radius: 2%;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  display: block;
+  place-self: center; }
+
+.footer {
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.73), rgba(16, 29, 44, 0.73)), url(./../img/karate-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
+.footer-box {
+  padding: 5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+  .footer-box p {
+    color: white; }
+
+.portfolio {
+  grid-column: full-start/full-end;
+  background-color: #fff;
+  margin: 5rem 0; }
+
+.btn {
+  padding: 0.8rem 3rem;
+  margin: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem; }
+  .btn__primary {
+    background-color: #c69963;
+    border: 1px solid currentColor; }
+  .btn__primary:hover {
+    background-color: #b28451; }
+  .btn__secondary {
+    background-color: transparent;
+    border: 1px solid #fff; }
+  .btn__secondary:hover {
+    background-color: #b28451; }
+
+.btn-box {
+  margin-top: 3rem; }
+
+.card-box {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, max-content) 1fr;
+  grid-template-rows: min-content max-content;
+  gap: 3rem; }
+
+.card {
+  background-color: #54483a;
+  width: 30rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .card-1 {
+    grid-column: 2/3; }
+  .card-img {
+    width: 30rem;
+    height: auto; }
+  .card-details {
+    color: #fff;
+    font-size: 1.5rem;
+    align-self: center;
+    letter-spacing: 2px; }
+
+.margin-top-lg {
+  margin-top: 10rem; }
+  @media only screen and (max-width: 50em) {
+    .margin-top-lg {
+      margin-top: 5rem; } }

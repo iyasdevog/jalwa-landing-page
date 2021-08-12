@@ -1,0 +1,21 @@
+.footer {
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.73),
+      rgba($color-secondary, 0.73)
+    ),
+    url(./../img/karate-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.footer-box {
+  padding: 5rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: white;
+  }
+}

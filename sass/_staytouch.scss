@@ -1,0 +1,49 @@
+.stay {
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.73),
+      rgba($color-secondary, 0.73)
+    ),
+    url(./../img/karate-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 8rem;
+  @media only screen and(max-width:$bp-medium) {
+    background-position: right;
+  }
+}
+.stay-box {
+  position: relative;
+  padding: 3rem;
+  margin: 3rem 20rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(250, 240, 240, 0.459);
+  transition: all 0.2s;
+
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  gap: 1rem;
+}
+.form {
+  border: none;
+  padding: 1rem 8rem;
+  place-self: center;
+}
+.form-label {
+  position: absolute;
+  left: -50%;
+  visibility: hidden;
+  opacity: 0;
+}
+.button {
+  border: none;
+  border-radius: 2%;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  display: block;
+  place-self: center;
+}

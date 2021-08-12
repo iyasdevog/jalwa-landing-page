@@ -1,0 +1,24 @@
+.btn {
+  padding: 0.8rem 3rem;
+  margin: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  &__primary {
+    background-color: $color-primary;
+    border: 1px solid currentColor;
+  }
+  &__primary:hover {
+    background-color: $color-primary-dark;
+  }
+  &__secondary {
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  &__secondary:hover {
+    background-color: $color-primary-dark;
+  }
+}
+.btn-box {
+  margin-top: 3rem;
+}

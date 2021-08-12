@@ -1,0 +1,42 @@
+.header {
+  position: relative;
+  grid-column: full-start/full-end;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.83),
+      rgba($color-secondary, 0.83)
+    ),
+    url(../img/karate-1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 3rem 25rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  // grid-template-rows:
+  //   minmax(min-content, 1fr) minmax(10rem, min-content) minmax(1fr, min-content)
+  //   1fr;
+  // grid-template-columns: minmax(min-content, max-content);
+  grid-row-gap: 1.5rem;
+  // align-content: center;
+  justify-items: center;
+  @media only screen and(max-width:$bp-medium) {
+    background-position: right;
+  }
+}
+.header-logo {
+  justify-self: center;
+}
+
+.header-logo__img {
+  width: 5.5rem;
+  height: auto;
+}
+.header-logo__text {
+  float: right;
+  margin: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}

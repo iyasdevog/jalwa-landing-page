@@ -1,0 +1,32 @@
+.aboutus {
+  grid-column: center-start/col-end 5;
+  background-color: #fff;
+  margin: 4rem 0;
+  @media only screen and(max-width:$bp-medium) {
+    grid-column: 1/-1;
+    margin: 2rem 0;
+  }
+}
+.about-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  @media only screen and(max-width:$bp-medium) {
+    padding: 6rem;
+    gap: 6rem;
+  }
+
+  &__text {
+    padding: 2rem;
+    text-align: left;
+    font-size: $default;
+  }
+  &__img {
+    @media only screen and(max-width:$bp-medium) {
+      width: 100%;
+    }
+  }
+}
